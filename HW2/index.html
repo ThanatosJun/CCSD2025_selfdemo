@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" content="width=device-width, initial-scale=1.0">
+    <title>SD Search</title>
+    <script src="https://cdn.staticfile.net/jquery/1.10.2/jquery.min.js"></script>
+    <script src="./js/hw2_search_dataset.js"></script>
+    <script src="./js/main.js" defer type="module"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div id="search-container">
+        <h1>SD Search</h1>
+        <div id="search-box-container">
+            <input type="text" id="search-box" placeholder="國立中央大學">
+            <button id="search-button">搜尋</button>
+            <i class="fas fa-user" id="user-icon"></i>
+        </div>
+
+        <label for="category-order">排序方式</label>
+        <select id="category-order">
+            <option value="title">標題</option>
+            <option value="created_atN">最新</option>
+            <option value="created_atO">最舊</option>
+            <option value="popularityH">人氣高</option>
+            <option value="popularityL">人氣低</option>
+        </select>
+        <p id="results-count">共找到 0 筆項目</p>
+    </div>
+    
+    <div id="results"></div>
+</body>
+</html>
