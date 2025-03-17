@@ -14,18 +14,19 @@
         <h1>SD Search</h1>
         <div id="search-box-container">
             <input type="text" id="search-box" placeholder="國立中央大學">
-            <button id="search-button">搜尋</button>
-            <i class="fas fa-user" id="user-icon"></i>
+            <button id="search-button" >搜尋</button>
+            <i class="fas fa-user" id="user-icon" style="font-size:40px"></i>
         </div>
-
-        <label for="category-order">排序方式</label>
-        <select id="category-order">
-            <option value="title">依標題排序</option>
-            <option value="created_atN">依建立時間（新到舊）</option>
-            <option value="created_atO">依建立時間（舊到新）</option>
-            <option value="popularityH">人氣（高到低）</option>
-            <option value="popularityL">人氣（低到高）</option>
-        </select>
+        <div id="category-order-container">
+            <label for="category-order">排序方式</label>
+            <select id="category-order">
+                <option value="title">依標題排序</option>
+                <option value="created_atN">依建立時間（新到舊）</option>
+                <option value="created_atO">依建立時間（舊到新）</option>
+                <option value="popularityH">人氣（高到低）</option>
+                <option value="popularityL">人氣（低到高）</option>
+            </select>
+        </div>
         <p id="results-count">共找到 0 筆項目</p>
     </div>
     
