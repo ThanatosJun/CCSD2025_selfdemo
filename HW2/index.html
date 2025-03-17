@@ -7,6 +7,7 @@
     <script src="./js/hw2_search_dataset.js"></script>
     <script src="./js/main.js" defer type="module"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <div id="search-container">
@@ -19,15 +20,16 @@
 
         <label for="category-order">排序方式</label>
         <select id="category-order">
-            <option value="title">標題</option>
-            <option value="created_atN">最新</option>
-            <option value="created_atO">最舊</option>
-            <option value="popularityH">人氣高</option>
-            <option value="popularityL">人氣低</option>
+            <option value="title">依標題排序</option>
+            <option value="created_atN">依建立時間（新到舊）</option>
+            <option value="created_atO">依建立時間（舊到新）</option>
+            <option value="popularityH">人氣（高到低）</option>
+            <option value="popularityL">人氣（低到高）</option>
         </select>
         <p id="results-count">共找到 0 筆項目</p>
     </div>
     
     <div id="results"></div>
+    <button id="load-more-button" style="display:none;">顯示更多</button>
 </body>
 </html>
